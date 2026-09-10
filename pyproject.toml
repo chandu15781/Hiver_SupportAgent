@@ -3,7 +3,7 @@ name = "hiver-support-agent"
 version = "1.0.0"
 description = "Autonomous AI customer support agent with intent classification, FAISS retrieval, and escalation logic."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.13"
 dependencies = [
     "python-dotenv==1.0.1",
     "pyyaml==6.0.1",

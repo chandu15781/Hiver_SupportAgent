@@ -1,0 +1,614 @@
+[
+  {
+    "conversation_id": "conv_119239",
+    "brand": "ChaseSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@76328 I really hope you all change but I'm sure you won't! Because you don't have to!",
+        "timestamp": "2017-10-11T13:00:09+00:00",
+        "tweet_id": 119239
+      },
+      {
+        "role": "agent",
+        "text": "@105835 Your business means a lot to us. Please DM your name, zip code and additional details about your concern. ^RR https://t.co/znUu1VJn9r",
+        "timestamp": "2017-10-11T13:25:49+00:00",
+        "tweet_id": 119238
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119250",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport hi #apple, I\u2019ve a concern about the latest ios is too slow on #iphone6 and i am not happy with it. Any solution please?",
+        "timestamp": "2017-10-11T05:33:17+00:00",
+        "tweet_id": 119250
+      },
+      {
+        "role": "customer",
+        "text": "@105838 @AppleSupport Me too am suffering , hope the can find a solution",
+        "timestamp": "2017-10-11T07:37:27+00:00",
+        "tweet_id": 119249
+      },
+      {
+        "role": "agent",
+        "text": "@105837 We can help. Which version of iOS are you on? You can find that in Settings &gt; General &gt; About. Reply in DM. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:38:29+00:00",
+        "tweet_id": 119248
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119253",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I just updated my phone and suddenly everything takes ages to load wtf @76099 this update sux I hate it fix it bye",
+        "timestamp": "2017-10-11T07:21:34+00:00",
+        "tweet_id": 119253
+      },
+      {
+        "role": "agent",
+        "text": "@105839 Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:40:27+00:00",
+        "tweet_id": 119252
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119256",
+    "brand": "SpotifyCares",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@76495 @91226 Please help! Spotify Premium skipping through songs constantly on android tablet &amp; bluetooth speaker. Tried everything!",
+        "timestamp": "2017-10-11T12:53:29+00:00",
+        "tweet_id": 119256
+      },
+      {
+        "role": "agent",
+        "text": "@105840 Hi there! What device is this happening on? If you could also let us know the Android and Spotify versions you're using, that'd be great /AY",
+        "timestamp": "2017-10-11T13:41:25+00:00",
+        "tweet_id": 119254
+      },
+      {
+        "role": "customer",
+        "text": "@SpotifyCares Thanks! Version 8.4.22.857 armv7 on anker bluetooth speaker on Samsung Galaxy Tab A (2016) Model SM-T280 Does distance from speaker matter?",
+        "timestamp": "2017-10-11T13:45:59+00:00",
+        "tweet_id": 119255
+      },
+      {
+        "role": "agent",
+        "text": "@105840 Thanks. The distance could possibly affect playback. Does logging out &gt; restarting your device &gt; logging back in make a difference? /AY",
+        "timestamp": "2017-10-11T14:00:48+00:00",
+        "tweet_id": 119257
+      },
+      {
+        "role": "customer",
+        "text": "@SpotifyCares No, but I've moved speaker to about 1 metre away and it's not skipping at the mo - it was about 3 or 4 metres away before. Fingers crossed!",
+        "timestamp": "2017-10-11T14:01:58+00:00",
+        "tweet_id": 119258
+      },
+      {
+        "role": "agent",
+        "text": "@105840 That's great to hear. If anything comes up, just let us know. We'll carry on helping out \ud83d\ude42 /AY",
+        "timestamp": "2017-10-11T14:20:00+00:00",
+        "tweet_id": 119259
+      },
+      {
+        "role": "customer",
+        "text": "@SpotifyCares Brilliant thanks \ud83d\ude0a",
+        "timestamp": "2017-10-11T14:22:05+00:00",
+        "tweet_id": 119260
+      },
+      {
+        "role": "agent",
+        "text": "@105840 You're welcome! If there's anything else we can help with, just give us a shout. We're here for you \ud83d\ude09 /CP",
+        "timestamp": "2017-10-11T14:41:35+00:00",
+        "tweet_id": 119261
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119263",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport after the 11.0.2 my phone just sucks most of the apps are broken, wifi disconnects frequently #apple #ios1102 #painfulupdate",
+        "timestamp": "2017-10-11T06:29:07+00:00",
+        "tweet_id": 119263
+      },
+      {
+        "role": "agent",
+        "text": "@105841 We'd love to help! Please DM us and let us know any steps you've tried since experiencing these behaviors. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:39+00:00",
+        "tweet_id": 119262
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119265",
+    "brand": "British_Airways",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "First flight for long time with @British_Airways. Now over one 1h delay for the short jump FRA-LCY and NO one here to provide status updates",
+        "timestamp": "2017-10-11T10:42:43+00:00",
+        "tweet_id": 119265
+      },
+      {
+        "role": "agent",
+        "text": "@105842 We're sorry your flight has been delayed, Beatner. Are you travelling on the BA8733? If so, the updated departure time we have is 15:30. 1/2",
+        "timestamp": "2017-10-11T13:36:31+00:00",
+        "tweet_id": 119264
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119268",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Okay @76099 I used my fucking phone for 2 minutes and it drains it down 8 fucking percent",
+        "timestamp": "2017-10-11T06:27:16+00:00",
+        "tweet_id": 119268
+      },
+      {
+        "role": "agent",
+        "text": "@105843 Battery life is important, and we're here for you. DM us the iOS version your iPhone is running. We'll go from there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:38+00:00",
+        "tweet_id": 119267
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119272",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "You\u2019ve paralysed my phone with your update @76099 grrrrrrrrrr",
+        "timestamp": "2017-10-11T02:19:23+00:00",
+        "tweet_id": 119272
+      },
+      {
+        "role": "agent",
+        "text": "@105844 We'd be happy to help. Send us a DM and we can start there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T03:26:00+00:00",
+        "tweet_id": 119271
+      },
+      {
+        "role": "customer",
+        "text": "@AppleSupport Can you get my iPhone 7plus back on the old iOS please?  Battery runs out in half the time, apps now frequently crash.",
+        "timestamp": "2017-10-11T06:49:50+00:00",
+        "tweet_id": 119270
+      },
+      {
+        "role": "agent",
+        "text": "@105844 Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:12+00:00",
+        "tweet_id": 119269
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119274",
+    "brand": "O2",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@O2 I received this a few weeks ago, since then I've been getting 2/3 calls a day from a telemarketer. Is someone using your name? https://t.co/GLtz4XHcex",
+        "timestamp": "2017-10-11T12:50:07+00:00",
+        "tweet_id": 119274
+      },
+      {
+        "role": "agent",
+        "text": "@82476 \ud83e\udd14 We'd like to help Sam, which number is calling you? Please DM us more info so we can advise further. https://t.co/5pyLDJBC6r",
+        "timestamp": "2017-10-11T13:13:14+00:00",
+        "tweet_id": 119273
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119276",
+    "brand": "comcastcares",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "My internet is down and xfinity talkin about 24-72 hours... y\u2019all have the game messed up. \n\n@77245",
+        "timestamp": "2017-10-11T13:38:04+00:00",
+        "tweet_id": 119276
+      },
+      {
+        "role": "agent",
+        "text": "@105845 I understand this is a frustrating experience, please send a DM with your account information so I can look into this matter for you. -AD",
+        "timestamp": "2017-10-11T13:42:46+00:00",
+        "tweet_id": 119275
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119278",
+    "brand": "sprintcare",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@76803  I service last 40 min sprint can I get a refund https://t.co/wYPw9hP6wt",
+        "timestamp": "2017-10-11T13:24:06+00:00",
+        "tweet_id": 119278
+      },
+      {
+        "role": "agent",
+        "text": "@105676 I understand how you frustrated this situation can be. Please follow us by sending a DM for further assistance. Sprint Cares. -AC",
+        "timestamp": "2017-10-11T13:29:53+00:00",
+        "tweet_id": 119277
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119280",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "So the new @76099 update does not let me listen to music and go on whatsapp at the same time?!?",
+        "timestamp": "2017-10-11T07:13:34+00:00",
+        "tweet_id": 119280
+      },
+      {
+        "role": "agent",
+        "text": "@105846 We'd like to help. What happens when you try to listen to Apple Music &amp; use WhatsApp? Does the music pause? Let us know in DM. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:35:01+00:00",
+        "tweet_id": 119279
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119283",
+    "brand": "SpotifyCares",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@SpotifyCares i've been having issues with playback. songs have been stopping midway through and won't restart unless i close and reopen app",
+        "timestamp": "2017-10-11T12:37:46+00:00",
+        "tweet_id": 119283
+      },
+      {
+        "role": "agent",
+        "text": "@105847 Hi Harry! Help's here. Can you check if logging out &gt; restarting your device &gt; logging back in makes a difference? Keep us posted /MU",
+        "timestamp": "2017-10-11T13:31:32+00:00",
+        "tweet_id": 119281
+      },
+      {
+        "role": "customer",
+        "text": "@SpotifyCares seems to be working at this stage. Will let you know if it happens again. Cheers",
+        "timestamp": "2017-10-11T13:46:20+00:00",
+        "tweet_id": 119282
+      },
+      {
+        "role": "agent",
+        "text": "@105847 Sure thing. We'll keep an eye out for your update /MU",
+        "timestamp": "2017-10-11T14:07:15+00:00",
+        "tweet_id": 119284
+      },
+      {
+        "role": "customer",
+        "text": "@SpotifyCares problem has come back again today. is there some kind of bug?",
+        "timestamp": "2017-10-12T10:25:35+00:00",
+        "tweet_id": 119285
+      },
+      {
+        "role": "agent",
+        "text": "@105847 Thanks for giving us a nudge about this. What device, operating system, and Spotify version is this happening on? /AY",
+        "timestamp": "2017-10-12T11:43:57+00:00",
+        "tweet_id": 119286
+      },
+      {
+        "role": "customer",
+        "text": "@SpotifyCares It's on a Macbook Air (early 2014), running High Sierra, spotify version 1.0.65.320.gac7a8e02",
+        "timestamp": "2017-10-12T12:04:21+00:00",
+        "tweet_id": 119287
+      },
+      {
+        "role": "agent",
+        "text": "@105847 Got it. Can you try the steps here for us: https://t.co/EqisDMwZAT? They should help with this. Let us know how it plays out /AY",
+        "timestamp": "2017-10-12T12:09:13+00:00",
+        "tweet_id": 119288
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119292",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport #ios11update - is still killing my battery within 12 hours - phone is 10 months old - it\u2019s a disgrace - used to get 2 days",
+        "timestamp": "2017-10-11T08:06:34+00:00",
+        "tweet_id": 119292
+      },
+      {
+        "role": "agent",
+        "text": "@105848 Let's take a look. What is the exact iOS you're using? Are you using any specific apps when noticing this? DM us your reply. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:44:29+00:00",
+        "tweet_id": 119289
+      },
+      {
+        "role": "customer",
+        "text": "@AppleSupport Latest version \ud83d\ude21\ud83d\ude21 I have read the help page turned off virtually all apps and location svs too - but in typing this I dropped 3% life",
+        "timestamp": "2017-10-11T13:48:49+00:00",
+        "tweet_id": 119290
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119294",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Took my phone off charge at 7:20am.\n\n8:03am - 60% battery remaining.\n\n@76099 plz I beg you, sort your battery life out\ud83d\ude29",
+        "timestamp": "2017-10-11T07:03:47+00:00",
+        "tweet_id": 119294
+      },
+      {
+        "role": "agent",
+        "text": "@105849 Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:00+00:00",
+        "tweet_id": 119293
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119297",
+    "brand": "SouthwestAir",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@southwestair Just curious....will I get the companion pass the exact moment I get enough points? It will I have to wait? Thanks!",
+        "timestamp": "2017-10-11T13:34:46+00:00",
+        "tweet_id": 119297
+      },
+      {
+        "role": "agent",
+        "text": "@105850 Once the points load and you hit the number, you get it immediately! You'll even receive a congrats email. Are you almost there? ^AC",
+        "timestamp": "2017-10-11T13:39:32+00:00",
+        "tweet_id": 119295
+      },
+      {
+        "role": "customer",
+        "text": "@SouthwestAir I am! Thank you for the answer!!",
+        "timestamp": "2017-10-11T13:55:48+00:00",
+        "tweet_id": 119296
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119299",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport I need a new code for my I-store. I haven\u2019t recd any but msg is too many sent. Help!",
+        "timestamp": "2017-10-11T07:16:18+00:00",
+        "tweet_id": 119299
+      },
+      {
+        "role": "agent",
+        "text": "@105851 We'd like to provide some assistance with this. Tell us more about the issue you're experiencing in DM. We'll go from there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:34:00+00:00",
+        "tweet_id": 119298
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119301",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@76099 @AppleSupport fix this update. It\u2019s horrible",
+        "timestamp": "2017-10-11T08:50:14+00:00",
+        "tweet_id": 119301
+      },
+      {
+        "role": "agent",
+        "text": "@105852 Are you experiencing an issue with your device? If so, DM us with what's going on. We'll see how we can help from there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:31:27+00:00",
+        "tweet_id": 119300
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119306",
+    "brand": "Ask_Spectrum",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@76501 I guess this means free cable for the neighborhood. https://t.co/FBgEE9YXPm",
+        "timestamp": "2017-10-11T13:27:49+00:00",
+        "tweet_id": 119306
+      },
+      {
+        "role": "agent",
+        "text": "@105854 I am sorry for the poor experience. Can you please DM the full service address and name on the account, as we ass... https://t.co/JEZhqGdBMd",
+        "timestamp": "2017-10-11T13:42:00+00:00",
+        "tweet_id": 119304
+      },
+      {
+        "role": "customer",
+        "text": "@Ask_Spectrum It's just in my yard. I've called 4-5 times in 6 weeks. I'm not a customer but it's pretty tempting. I do have some coaxial",
+        "timestamp": "2017-10-11T13:49:52+00:00",
+        "tweet_id": 119305
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119315",
+    "brand": "Tesco",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Got id's @Tesco for buying one Adnams Broadside. Is being blind part of the job-spec? I am 35 and 99 kilos.",
+        "timestamp": "2017-10-11T12:14:41+00:00",
+        "tweet_id": 119315
+      },
+      {
+        "role": "agent",
+        "text": "@105855 Hi Thomas, we operate a Think 25 policy at our stores. I'd be flattered to be ID'd. :-) - Helena",
+        "timestamp": "2017-10-11T12:17:02+00:00",
+        "tweet_id": 119314
+      },
+      {
+        "role": "customer",
+        "text": "@Tesco Uk offlicense law is 18. Not 25",
+        "timestamp": "2017-10-11T12:29:52+00:00",
+        "tweet_id": 119313
+      },
+      {
+        "role": "agent",
+        "text": "@105855 Hi Thomas, this is correct but this helps our store colleagues judge age and protect them from making underage sales. Amanda",
+        "timestamp": "2017-10-11T13:28:34+00:00",
+        "tweet_id": 119311
+      },
+      {
+        "role": "customer",
+        "text": "@Tesco The point is if it's enforced they do it properly or they don't. Plus take some common-sense and think does that person look over 18?",
+        "timestamp": "2017-10-11T13:31:06+00:00",
+        "tweet_id": 119310
+      },
+      {
+        "role": "agent",
+        "text": "@105855 Hi Thomas, if a colleague believes the person buying alcohol looks under 25, they will be challenged for ID to prove they're of age. - Paige",
+        "timestamp": "2017-10-11T13:33:07+00:00",
+        "tweet_id": 119308
+      },
+      {
+        "role": "customer",
+        "text": "@Tesco Maybe hire colleagues who can see?",
+        "timestamp": "2017-10-11T13:33:43+00:00",
+        "tweet_id": 119309
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119319",
+    "brand": "Tesco",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Hey @Tesco, your website's broken. It's telling me there are no delivery slots for the next 3 weeks, which I find slightly unlikely.",
+        "timestamp": "2017-10-11T13:36:32+00:00",
+        "tweet_id": 119319
+      },
+      {
+        "role": "agent",
+        "text": "@105856 Hi there, could you try deleting your cache and cookies and reinstalling the app if using it? This should fix the issue :) - Dani",
+        "timestamp": "2017-10-11T13:42:19+00:00",
+        "tweet_id": 119317
+      },
+      {
+        "role": "customer",
+        "text": "@Tesco Will I lose all the shopping I've done if I delete the cache/cookies (not using app)?",
+        "timestamp": "2017-10-11T13:43:09+00:00",
+        "tweet_id": 119318
+      },
+      {
+        "role": "agent",
+        "text": "@105856 Hi there, as long as you sign out of your account prior to deleting your cache &amp; cookies, you'll still have a full basket :) Thanks - Mike",
+        "timestamp": "2017-10-11T13:45:00+00:00",
+        "tweet_id": 119320
+      },
+      {
+        "role": "customer",
+        "text": "@Tesco Done all that. Still telling me there are no delivery slots whatsoever.",
+        "timestamp": "2017-10-11T13:48:39+00:00",
+        "tweet_id": 119321
+      },
+      {
+        "role": "agent",
+        "text": "@105856 Can you DM me your full name, address and email? I'd be happy to look into this further for you :) Thanks - Mike",
+        "timestamp": "2017-10-11T13:49:29+00:00",
+        "tweet_id": 119322
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119326",
+    "brand": "AppleSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "My apps stop working without warning and my phone freezes every five minutes! Love the new update @76099!!!!",
+        "timestamp": "2017-10-10T23:09:08+00:00",
+        "tweet_id": 119326
+      },
+      {
+        "role": "agent",
+        "text": "@105857 We'd like to help if we can. When did this start happening? Which version of iOS are you running currently?",
+        "timestamp": "2017-10-11T00:19:34+00:00",
+        "tweet_id": 119325
+      },
+      {
+        "role": "customer",
+        "text": "@AppleSupport I have the latest version iOS. It started immediately after I updated my phone.",
+        "timestamp": "2017-10-11T08:52:14+00:00",
+        "tweet_id": 119324
+      },
+      {
+        "role": "agent",
+        "text": "@105857 Is there a particular app that seems to cause these issues more than others? What model iPhone are you using? Join us in DM. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:55:31+00:00",
+        "tweet_id": 119323
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119328",
+    "brand": "HPSupport",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@HPSupport Problem with printhead  Serial# TH536D1HN #hpcswus #hpprnt",
+        "timestamp": "2017-10-11T02:04:50+00:00",
+        "tweet_id": 119328
+      },
+      {
+        "role": "agent",
+        "text": "@105858 Hi Agoura, thanks for tweeting. Please refer to this article: https://t.co/BSsgjZARTc &amp; click the link to reply back. ^Rashmi https://t.co/a2xkfCrUG1",
+        "timestamp": "2017-10-11T13:36:36+00:00",
+        "tweet_id": 119327
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119331",
+    "brand": "UPSHelp",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "They reschedule my shit for tomorrow https://t.co/RsvZcT982t",
+        "timestamp": "2017-10-11T13:47:14+00:00",
+        "tweet_id": 119331
+      },
+      {
+        "role": "customer",
+        "text": "@105860 I wish Amazon had an option of where I can just get it shipped to the ups store so I can avoid a lot of the struggle",
+        "timestamp": "2017-10-11T13:50:42+00:00",
+        "tweet_id": 119330
+      },
+      {
+        "role": "agent",
+        "text": "@105859 UPS has a service called My Choice that will allow your packages to be delivered to UPS Store. ^ML  https://t.co/BPZKndqww1 https://t.co/wKJHDXWGRQ",
+        "timestamp": "2017-10-11T13:56:00+00:00",
+        "tweet_id": 119329
+      }
+    ]
+  }
+]

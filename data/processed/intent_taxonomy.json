@@ -1,0 +1,65 @@
+[
+  {
+    "name": "battery_drain",
+    "description": "Complaints regarding rapid battery depletion, short battery life, or excessive power consumption, often attributed to recent software updates.",
+    "example_messages": [
+      "Okay @76099 I used my fucking phone for 2 minutes and it drains it down 8 fucking percent",
+      "@AppleSupport #ios11update - is still killing my battery within 12 hours - phone is 10 months old - it\u2019s a disgrace - used to get 2 days",
+      "Took my phone off charge at 7:20am.\n\n8:03am - 60% battery remaining.\n\n@76099 plz I beg you, sort your battery life out\ud83d\ude29"
+    ]
+  },
+  {
+    "name": "app_crashes_stability",
+    "description": "Issues where applications crash, stop working, or fail to launch, as well as general system instability like freezing or hanging.",
+    "example_messages": [
+      "@AppleSupport after the 11.0.2 my phone just sucks most of the apps are broken, wifi disconnects frequently #apple #ios1102 #painfulupdate",
+      "My apps stop working without warning and my phone freezes every five minutes! Love the new update @76099!!!!",
+      "@AppleSupport Can you get my iPhone 7plus back on the old iOS please?  Battery runs out in half the time, apps now frequently crash."
+    ]
+  },
+  {
+    "name": "system_performance",
+    "description": "General complaints about the device being slow, laggy, or taking a long time to load content, without specific reference to app crashes or battery.",
+    "example_messages": [
+      "@AppleSupport hi #apple, I\u2019ve a concern about the latest ios is too slow on #iphone6 and i am not happy with it. Any solution please?",
+      "I just updated my phone and suddenly everything takes ages to load wtf @76099 this update sux I hate it fix it bye",
+      "You\u2019ve paralysed my phone with your update @76099 grrrrrrrrrr"
+    ]
+  },
+  {
+    "name": "feature_functionality",
+    "description": "Issues where specific features or functionalities are not working as expected, such as multitasking, audio, or connectivity problems.",
+    "example_messages": [
+      "So the new @76099 update does not let me listen to music and go on whatsapp at the same time?!?"
+    ]
+  },
+  {
+    "name": "account_access",
+    "description": "Problems related to accessing Apple accounts, App Store, or receiving verification codes and security notifications.",
+    "example_messages": [
+      "@AppleSupport I need a new code for my I-store. I haven\u2019t recd any but msg is too many sent. Help!"
+    ]
+  },
+  {
+    "name": "general_update_complaint",
+    "description": "General expressions of dissatisfaction with a software update that do not specify a particular technical symptom like battery or crashes.",
+    "example_messages": [
+      "@76099 @AppleSupport fix this update. It\u2019s horrible",
+      "@AppleSupport Latest version \ud83d\ude21\ud83d\ude21 I have read the help page turned off virtually all apps and location svs too - but in typing this I dropped 3% life"
+    ]
+  },
+  {
+    "name": "supportive_solidarity",
+    "description": "Messages where users express agreement with other complaints or share their own suffering without providing new technical details.",
+    "example_messages": [
+      "@105838 @AppleSupport Me too am suffering , hope the can find a solution"
+    ]
+  },
+  {
+    "name": "issue_confirmation",
+    "description": "Messages confirming that an issue has started or is present, often providing context about when it began, without detailing the specific symptom.",
+    "example_messages": [
+      "@AppleSupport I have the latest version iOS. It started immediately after I updated my phone."
+    ]
+  }
+]

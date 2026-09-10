@@ -1,0 +1,13 @@
+brand,conversation_count,customer_message_count,agent_message_count,resolved_count,avg_thread_length,unique_customers,resolution_rate,composite_score
+AppleSupport,11,15,13,5,2.5454545454545454,11,0.45454545454545453,0.7
+SpotifyCares,2,8,8,2,8.0,2,1.0,0.505
+Tesco,2,7,6,2,6.5,2,1.0,0.4675
+SouthwestAir,1,2,1,1,3.0,1,1.0,0.325
+UPSHelp,1,2,1,1,3.0,1,1.0,0.325
+British_Airways,1,1,1,1,2.0,1,1.0,0.3
+HPSupport,1,1,1,1,2.0,1,1.0,0.3
+sprintcare,1,1,1,1,2.0,1,1.0,0.3
+Ask_Spectrum,1,2,1,0,3.0,1,0.0,0.025
+ChaseSupport,1,1,1,0,2.0,1,0.0,0.0
+O2,1,1,1,0,2.0,1,0.0,0.0
+comcastcares,1,1,1,0,2.0,1,0.0,0.0

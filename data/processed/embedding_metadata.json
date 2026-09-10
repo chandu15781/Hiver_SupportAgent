@@ -1,0 +1,247 @@
+[
+  {
+    "conversation_id": "conv_119250",
+    "brand": "AppleSupport",
+    "query_text": "@AppleSupport hi #apple, I\u2019ve a concern about the latest ios is too slow on #iphone6 and i am not happy with it. Any solution please? @105838 @AppleSupport Me too am suffering , hope the can find a solution",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport hi #apple, I\u2019ve a concern about the latest ios is too slow on #iphone6 and i am not happy with it. Any solution please?",
+        "timestamp": "2017-10-11T05:33:17+00:00",
+        "tweet_id": 119250
+      },
+      {
+        "role": "customer",
+        "text": "@105838 @AppleSupport Me too am suffering , hope the can find a solution",
+        "timestamp": "2017-10-11T07:37:27+00:00",
+        "tweet_id": 119249
+      },
+      {
+        "role": "agent",
+        "text": "@105837 We can help. Which version of iOS are you on? You can find that in Settings &gt; General &gt; About. Reply in DM. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:38:29+00:00",
+        "tweet_id": 119248
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119253",
+    "brand": "AppleSupport",
+    "query_text": "I just updated my phone and suddenly everything takes ages to load wtf @76099 this update sux I hate it fix it bye",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I just updated my phone and suddenly everything takes ages to load wtf @76099 this update sux I hate it fix it bye",
+        "timestamp": "2017-10-11T07:21:34+00:00",
+        "tweet_id": 119253
+      },
+      {
+        "role": "agent",
+        "text": "@105839 Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:40:27+00:00",
+        "tweet_id": 119252
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119263",
+    "brand": "AppleSupport",
+    "query_text": "@AppleSupport after the 11.0.2 my phone just sucks most of the apps are broken, wifi disconnects frequently #apple #ios1102 #painfulupdate",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport after the 11.0.2 my phone just sucks most of the apps are broken, wifi disconnects frequently #apple #ios1102 #painfulupdate",
+        "timestamp": "2017-10-11T06:29:07+00:00",
+        "tweet_id": 119263
+      },
+      {
+        "role": "agent",
+        "text": "@105841 We'd love to help! Please DM us and let us know any steps you've tried since experiencing these behaviors. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:39+00:00",
+        "tweet_id": 119262
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119268",
+    "brand": "AppleSupport",
+    "query_text": "Okay @76099 I used my fucking phone for 2 minutes and it drains it down 8 fucking percent",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Okay @76099 I used my fucking phone for 2 minutes and it drains it down 8 fucking percent",
+        "timestamp": "2017-10-11T06:27:16+00:00",
+        "tweet_id": 119268
+      },
+      {
+        "role": "agent",
+        "text": "@105843 Battery life is important, and we're here for you. DM us the iOS version your iPhone is running. We'll go from there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:38+00:00",
+        "tweet_id": 119267
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119272",
+    "brand": "AppleSupport",
+    "query_text": "You\u2019ve paralysed my phone with your update @76099 grrrrrrrrrr @AppleSupport Can you get my iPhone 7plus back on the old iOS please?  Battery runs out in half the time, apps now frequently crash.",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "You\u2019ve paralysed my phone with your update @76099 grrrrrrrrrr",
+        "timestamp": "2017-10-11T02:19:23+00:00",
+        "tweet_id": 119272
+      },
+      {
+        "role": "agent",
+        "text": "@105844 We'd be happy to help. Send us a DM and we can start there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T03:26:00+00:00",
+        "tweet_id": 119271
+      },
+      {
+        "role": "customer",
+        "text": "@AppleSupport Can you get my iPhone 7plus back on the old iOS please?  Battery runs out in half the time, apps now frequently crash.",
+        "timestamp": "2017-10-11T06:49:50+00:00",
+        "tweet_id": 119270
+      },
+      {
+        "role": "agent",
+        "text": "@105844 Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:12+00:00",
+        "tweet_id": 119269
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119280",
+    "brand": "AppleSupport",
+    "query_text": "So the new @76099 update does not let me listen to music and go on whatsapp at the same time?!?",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "So the new @76099 update does not let me listen to music and go on whatsapp at the same time?!?",
+        "timestamp": "2017-10-11T07:13:34+00:00",
+        "tweet_id": 119280
+      },
+      {
+        "role": "agent",
+        "text": "@105846 We'd like to help. What happens when you try to listen to Apple Music &amp; use WhatsApp? Does the music pause? Let us know in DM. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:35:01+00:00",
+        "tweet_id": 119279
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119292",
+    "brand": "AppleSupport",
+    "query_text": "@AppleSupport #ios11update - is still killing my battery within 12 hours - phone is 10 months old - it\u2019s a disgrace - used to get 2 days @AppleSupport Latest version \ud83d\ude21\ud83d\ude21 I have read the help page turned off virtually all apps and location svs too - but in typing this I dropped 3% life",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport #ios11update - is still killing my battery within 12 hours - phone is 10 months old - it\u2019s a disgrace - used to get 2 days",
+        "timestamp": "2017-10-11T08:06:34+00:00",
+        "tweet_id": 119292
+      },
+      {
+        "role": "agent",
+        "text": "@105848 Let's take a look. What is the exact iOS you're using? Are you using any specific apps when noticing this? DM us your reply. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:44:29+00:00",
+        "tweet_id": 119289
+      },
+      {
+        "role": "customer",
+        "text": "@AppleSupport Latest version \ud83d\ude21\ud83d\ude21 I have read the help page turned off virtually all apps and location svs too - but in typing this I dropped 3% life",
+        "timestamp": "2017-10-11T13:48:49+00:00",
+        "tweet_id": 119290
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119294",
+    "brand": "AppleSupport",
+    "query_text": "Took my phone off charge at 7:20am.\n\n8:03am - 60% battery remaining.\n\n@76099 plz I beg you, sort your battery life out\ud83d\ude29",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Took my phone off charge at 7:20am.\n\n8:03am - 60% battery remaining.\n\n@76099 plz I beg you, sort your battery life out\ud83d\ude29",
+        "timestamp": "2017-10-11T07:03:47+00:00",
+        "tweet_id": 119294
+      },
+      {
+        "role": "agent",
+        "text": "@105849 Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:30:00+00:00",
+        "tweet_id": 119293
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119299",
+    "brand": "AppleSupport",
+    "query_text": "@AppleSupport I need a new code for my I-store. I haven\u2019t recd any but msg is too many sent. Help!",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@AppleSupport I need a new code for my I-store. I haven\u2019t recd any but msg is too many sent. Help!",
+        "timestamp": "2017-10-11T07:16:18+00:00",
+        "tweet_id": 119299
+      },
+      {
+        "role": "agent",
+        "text": "@105851 We'd like to provide some assistance with this. Tell us more about the issue you're experiencing in DM. We'll go from there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:34:00+00:00",
+        "tweet_id": 119298
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119301",
+    "brand": "AppleSupport",
+    "query_text": "@76099 @AppleSupport fix this update. It\u2019s horrible",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "@76099 @AppleSupport fix this update. It\u2019s horrible",
+        "timestamp": "2017-10-11T08:50:14+00:00",
+        "tweet_id": 119301
+      },
+      {
+        "role": "agent",
+        "text": "@105852 Are you experiencing an issue with your device? If so, DM us with what's going on. We'll see how we can help from there. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:31:27+00:00",
+        "tweet_id": 119300
+      }
+    ]
+  },
+  {
+    "conversation_id": "conv_119326",
+    "brand": "AppleSupport",
+    "query_text": "My apps stop working without warning and my phone freezes every five minutes! Love the new update @76099!!!! @AppleSupport I have the latest version iOS. It started immediately after I updated my phone.",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "My apps stop working without warning and my phone freezes every five minutes! Love the new update @76099!!!!",
+        "timestamp": "2017-10-10T23:09:08+00:00",
+        "tweet_id": 119326
+      },
+      {
+        "role": "agent",
+        "text": "@105857 We'd like to help if we can. When did this start happening? Which version of iOS are you running currently?",
+        "timestamp": "2017-10-11T00:19:34+00:00",
+        "tweet_id": 119325
+      },
+      {
+        "role": "customer",
+        "text": "@AppleSupport I have the latest version iOS. It started immediately after I updated my phone.",
+        "timestamp": "2017-10-11T08:52:14+00:00",
+        "tweet_id": 119324
+      },
+      {
+        "role": "agent",
+        "text": "@105857 Is there a particular app that seems to cause these issues more than others? What model iPhone are you using? Join us in DM. https://t.co/GDrqU22YpT",
+        "timestamp": "2017-10-11T13:55:31+00:00",
+        "tweet_id": 119323
+      }
+    ]
+  }
+]

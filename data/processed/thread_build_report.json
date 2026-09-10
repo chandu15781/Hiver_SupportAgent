@@ -1,0 +1,7 @@
+{
+  "total_tweets": 93,
+  "root_customer_tweets": 25,
+  "valid_conversations": 24,
+  "dropped_no_agent_reply": 1,
+  "dropped_no_brand_identified": 0
+}

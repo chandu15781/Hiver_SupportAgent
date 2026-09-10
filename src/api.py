@@ -35,36 +35,37 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Global agent reference — populated at startup
+# Global agent reference — populated at startup or lazily on first request
 _agent = None
+
+
+def get_agent():
+    """Retrieve the global agent, lazily initializing if needed."""
+    global _agent
+    if _agent is None:
+        from src.agent.support_agent import SupportAgent
+        from src.config import load_config
+
+        config = load_config()
+        processed_dir = str(PROJECT_ROOT / "data" / "processed")
+        try:
+            _agent = SupportAgent.from_artifacts(
+                processed_dir=processed_dir,
+                config=config,
+            )
+            logger.info("Support agent loaded lazily")
+        except Exception as e:
+            logger.error("Failed to load support agent artifacts: %s", e)
+            _agent = None
+    return _agent
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Load all artifacts and construct the agent at startup."""
-    global _agent
-    from src.agent.support_agent import SupportAgent
-    from src.config import load_config
-
-    config = load_config()
-    processed_dir = str(PROJECT_ROOT / "data" / "processed")
-
-    try:
-        _agent = SupportAgent.from_artifacts(
-            processed_dir=processed_dir,
-            config=config,
-        )
-        logger.info("Support agent loaded successfully")
-    except FileNotFoundError as e:
-        logger.error(
-            "Agent artifacts not found: %s. "
-            "Run 'python scripts/build_index.py' first.",
-            e,
-        )
-        _agent = None
-
+    get_agent()
     yield
-
+    global _agent
     _agent = None
     logger.info("Server shut down")
 
@@ -131,16 +132,18 @@ class TaxonomyIntentResponse(BaseModel):
 @app.get("/health", response_model=HealthResponse)
 async def health():
     """Health check endpoint."""
+    agent = get_agent()
     return HealthResponse(
-        status="ok" if _agent else "degraded",
-        agent_loaded=_agent is not None,
+        status="ok" if agent else "degraded",
+        agent_loaded=agent is not None,
     )
 
 
 @app.post("/support", response_model=SupportResponse)
 async def support(request: SupportRequest):
     """Process a customer message through the full agent pipeline."""
-    if _agent is None:
+    agent = get_agent()
+    if agent is None:
         raise HTTPException(
             status_code=503,
             detail="Agent not loaded. Run 'python scripts/build_index.py' "
@@ -148,7 +151,7 @@ async def support(request: SupportRequest):
         )
 
     try:
-        response = _agent.handle(request.message)
+        response = agent.handle(request.message)
     except Exception as e:
         logger.exception("Error processing message")
         raise HTTPException(status_code=500, detail=str(e))
@@ -172,7 +175,8 @@ async def support(request: SupportRequest):
 @app.get("/taxonomy", response_model=list[TaxonomyIntentResponse])
 async def taxonomy():
     """Return the current intent taxonomy."""
-    if _agent is None:
+    agent = get_agent()
+    if agent is None:
         raise HTTPException(status_code=503, detail="Agent not loaded.")
 
     return [
@@ -181,7 +185,7 @@ async def taxonomy():
             description=intent.description,
             example_messages=intent.example_messages,
         )
-        for intent in _agent.taxonomy
+        for intent in agent.taxonomy
     ]
 
 

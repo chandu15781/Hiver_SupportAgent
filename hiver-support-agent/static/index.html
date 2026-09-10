@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiver Support Agent — AI Intelligence Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --bg-card: rgba(22, 30, 49, 0.75);
+      --bg-card-hover: rgba(30, 41, 67, 0.85);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-glow: rgba(59, 130, 246, 0.35);
+      --success: #10b981;
+      --success-bg: rgba(16, 185, 129, 0.12);
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.12);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.12);
+      --purple: #8b5cf6;
+      --purple-bg: rgba(139, 92, 246, 0.15);
+      --cyan: #06b6d4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(ellipse at 80% 0%, #1e1b4b 0%, #0b0f19 70%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(11, 15, 25, 0.8);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-badge {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: white;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .header-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .status-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: rgba(16, 185, 129, 0.1);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.9); }
+    }
+
+    .pill-info {
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.75rem;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      backdrop-filter: blur(16px);
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #e2e8f0;
+    }
+
+    .card-title svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--primary);
+    }
+
+    /* Message Input */
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 110px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.95rem;
+      resize: vertical;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    textarea:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    .quick-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .chip {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .chip:hover {
+      background: rgba(59, 130, 246, 0.15);
+      border-color: var(--primary);
+      color: var(--text);
+    }
+
+    .btn-submit {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: white;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 15px var(--primary-glow);
+      transition: transform 0.15s, opacity 0.15s;
+    }
+
+    .btn-submit:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* Result Panel */
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      gap: 0.75rem;
+    }
+
+    .empty-icon {
+      font-size: 2.5rem;
+      opacity: 0.4;
+    }
+
+    .result-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .tag-intent {
+      background: var(--purple-bg);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    .tag-escalate {
+      background: var(--danger-bg);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .tag-auto {
+      background: var(--success-bg);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .confidence-meter {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .meter-bar {
+      flex: 1;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+
+    .meter-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      border-radius: 9999px;
+      transition: width 0.6s ease;
+    }
+
+    .info-box {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .info-box-header {
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    .retrieval-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .retrieval-item {
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+    }
+
+    .retrieval-score {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan);
+      font-weight: 600;
+    }
+
+    /* Taxonomy view */
+    .taxonomy-section {
+      grid-column: 1 / -1;
+    }
+
+    .taxonomy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .tax-card {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .tax-name {
+      font-weight: 600;
+      color: #93c5fd;
+      font-size: 0.9rem;
+    }
+
+    .tax-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo-badge">H</div>
+      <div>
+        <div class="brand-title">Hiver Support Agent</div>
+        <div class="brand-sub">Autonomous Customer Support AI & RAG Pipeline</div>
+      </div>
+    </div>
+    <div class="header-badges">
+      <div class="pill-info">Brand: AppleSupport</div>
+      <div class="pill-info">Model: Qwen 2.5 72B / 27B</div>
+      <div class="status-pill">
+        <div class="status-dot"></div>
+        <span>Live & Ready</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left Column: Input Playground -->
+    <div class="card">
+      <div class="card-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        Customer Message Simulator
+      </div>
+
+      <div class="input-group">
+        <label for="msg-input" style="font-size: 0.85rem; color: var(--text-muted);">Incoming Customer Ticket:</label>
+        <textarea id="msg-input" placeholder="Type or select a customer support message..."></textarea>
+      </div>
+
+      <div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Test Scenarios:</div>
+        <div class="quick-chips">
+          <div class="chip" onclick="setQuery('My battery drains in less than 3 hours since updating to iOS 17.')">⚡ Battery Drain</div>
+          <div class="chip" onclick="setQuery('The photos app freezes and crashes whenever I open albums.')">💥 App Crash</div>
+          <div class="chip" onclick="setQuery('Cannot sign in to Apple ID and haven\'t received 2FA verification code.')">🔒 Account Access</div>
+          <div class="chip" onclick="setQuery('Everything on my phone is super laggy and taking forever to load.')">🐌 System Lag</div>
+          <div class="chip" onclick="setQuery('I want a refund immediately, your software update ruined my phone!')">🚨 Escalation Trigger</div>
+        </div>
+      </div>
+
+      <button id="btn-submit" class="btn-submit" onclick="submitMessage()">
+        <span>Process Ticket</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Right Column: Real-time Pipeline Output -->
+    <div class="card" id="output-card">
+      <div class="card-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 14 14"></polyline>
+        </svg>
+        Real-time Pipeline Inspection
+      </div>
+
+      <div id="output-content">
+        <div class="empty-state">
+          <div class="empty-icon">⚡</div>
+          <div style="font-weight: 600; color: #cbd5e1;">Awaiting Ticket Input</div>
+          <div style="font-size: 0.82rem; max-width: 320px;">Send a customer message or click a test scenario to inspect intent classification, FAISS retrieval, and escalation logic.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Intent Taxonomy Explorer -->
+    <div class="card taxonomy-section">
+      <div class="card-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+        Derived Brand Intent Taxonomy (AppleSupport)
+      </div>
+      <div class="taxonomy-grid" id="taxonomy-grid">
+        <div style="color: var(--text-muted); font-size: 0.85rem;">Loading taxonomy...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Hiver Support Agent • Built with FastAPI, Groq LLM, FAISS Vector Search & TF-IDF
+  </footer>
+
+  <script>
+    function setQuery(text) {
+      document.getElementById('msg-input').value = text;
+      submitMessage();
+    }
+
+    async function loadTaxonomy() {
+      try {
+        const res = await fetch('/taxonomy');
+        if (!res.ok) return;
+        const intents = await res.json();
+        const grid = document.getElementById('taxonomy-grid');
+        grid.innerHTML = intents.map(item => `
+          <div class="tax-card">
+            <div class="tax-name">🏷️ ${item.name}</div>
+            <div class="tax-desc">${item.description}</div>
+          </div>
+        `).join('');
+      } catch (err) {
+        console.error('Failed to load taxonomy:', err);
+      }
+    }
+
+    async function submitMessage() {
+      const input = document.getElementById('msg-input');
+      const btn = document.getElementById('btn-submit');
+      const output = document.getElementById('output-content');
+      const message = input.value.trim();
+
+      if (!message) return;
+
+      btn.disabled = true;
+      btn.innerHTML = `<span>Analyzing Pipeline...</span>`;
+      output.innerHTML = `
+        <div class="empty-state">
+          <div class="status-dot" style="width: 24px; height: 24px; margin-bottom: 0.5rem;"></div>
+          <div style="font-weight: 600;">Running Pipeline: Intent → Retrieval → Escalation</div>
+        </div>
+      `;
+
+      try {
+        const res = await fetch('/support', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message })
+        });
+
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.detail || 'Request failed');
+        }
+
+        const data = await res.json();
+        renderResult(data);
+      } catch (err) {
+        output.innerHTML = `
+          <div class="info-box" style="border-color: var(--danger); background: var(--danger-bg); color: #fca5a5;">
+            <strong>Error executing agent pipeline:</strong><br>${err.message}
+          </div>
+        `;
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `
+          <span>Process Ticket</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        `;
+      }
+    }
+
+    function renderResult(data) {
+      const output = document.getElementById('output-content');
+      const isEscalated = data.escalation.decision === 'ESCALATE';
+      const confPct = Math.round(data.intent.confidence * 100);
+
+      let retrievalHtml = data.retrieved_conversations.map(rc => `
+        <div class="retrieval-item">
+          <span>📁 <strong>${rc.conversation_id}</strong> (${rc.brand})</span>
+          <span class="retrieval-score">Similarity: ${(rc.similarity * 100).toFixed(1)}%</span>
+        </div>
+      `).join('');
+
+      output.innerHTML = `
+        <div class="result-section">
+          <!-- Badges & Confidence -->
+          <div class="badge-row">
+            <span class="tag tag-intent">🎯 Intent: ${data.intent.intent_name}</span>
+            <span class="tag ${isEscalated ? 'tag-escalate' : 'tag-auto'}">
+              ${isEscalated ? '⚠️ ESCALATE' : '🤖 AUTO REPLY'}
+            </span>
+          </div>
+
+          <div class="confidence-meter">
+            <span style="font-weight: 500; font-size: 0.8rem; color: var(--text-muted);">Confidence:</span>
+            <div class="meter-bar">
+              <div class="meter-fill" style="width: ${confPct}%;"></div>
+            </div>
+            <span style="font-family: 'JetBrains Mono'; font-weight: 600;">${confPct}%</span>
+          </div>
+
+          <!-- Intent Reasoning -->
+          <div class="info-box">
+            <div class="info-box-header">LLM Intent Reasoning</div>
+            <div>${data.intent.reasoning}</div>
+          </div>
+
+          <!-- Escalation Policy -->
+          <div class="info-box" style="border-color: ${isEscalated ? 'rgba(239, 68, 68, 0.3)' : 'rgba(16, 185, 129, 0.3)'};">
+            <div class="info-box-header">Escalation Policy Decision</div>
+            <div>${data.escalation.reason}</div>
+            ${data.escalation.triggered_rules.length ? `<div style="margin-top: 0.4rem; font-size: 0.78rem; color: #fca5a5;">Triggered rules: <code>${data.escalation.triggered_rules.join(', ')}</code></div>` : ''}
+          </div>
+
+          <!-- Draft Reply or Handoff -->
+          ${data.draft_reply ? `
+            <div class="info-box" style="border-color: rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.08);">
+              <div class="info-box-header" style="color: #93c5fd;">Generated AI Draft Reply</div>
+              <div style="font-style: italic;">"${data.draft_reply}"</div>
+            </div>
+          ` : ''}
+
+          <!-- Retrieved RAG Context -->
+          <div>
+            <div class="info-box-header" style="margin-bottom: 0.4rem;">Top Historical RAG Matches</div>
+            <div class="retrieval-list">
+              ${retrievalHtml}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Initialize taxonomy on load
+    loadTaxonomy();
+  </script>
+</body>
+</html>

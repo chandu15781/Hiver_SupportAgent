@@ -1,0 +1,25 @@
+project:
+  name: hiver-support-agent
+
+dataset:
+  raw_path: "data/raw/sample.csv"
+  max_rows: null        # null = use every row in raw_path; set an int to cap ingestion
+  sample_size: 50000    # target size when subsampling a larger raw file
+
+brand:
+  name: AppleSupport    # selected via scripts/select_brand.py — top-ranked brand (composite_score=0.70)
+
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.10
+
+classification:
+  confidence_threshold: 0.70
+
+escalation:
+  retrieval_threshold: 0.10
+  intent_threshold: 0.70
+
+evaluation:
+  golden_set_size: 200
+  human_agreement_sample_size: 40

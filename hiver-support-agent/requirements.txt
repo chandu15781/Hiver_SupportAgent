@@ -1,0 +1,21 @@
+# Core
+python-dotenv==1.0.1
+pyyaml==6.0.1
+pydantic==2.7.1
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Data
+pandas==2.2.2
+numpy==1.26.4
+pyarrow==16.1.0
+
+# ML / retrieval
+scikit-learn==1.5.0
+faiss-cpu==1.8.0
+
+# LLM providers
+openai==1.30.0
+
+# Testing / eval
+pytest==8.2.0
